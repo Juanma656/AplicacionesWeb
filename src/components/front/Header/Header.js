@@ -29,7 +29,7 @@ const Header = () => {
 
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/signup">
             <FontAwesomeIcon icon = {faUser}/>
             </Link>
           </li>
@@ -37,7 +37,7 @@ const Header = () => {
 
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/cart" >
               <FontAwesomeIcon icon = {faCartShopping}/>
             </Link>
           </li>

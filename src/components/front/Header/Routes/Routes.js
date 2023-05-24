@@ -1,16 +1,20 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Products from "../Products/Products";
+import Signup from "../Signup/Signup";
 
 const Routes = ({ productItems }) => {
   return (
-    <div>
+    <Router>
       <Switch>
         <Route path="/" exact>
           <Products productItems={productItems} />
         </Route>
+        <Route path="/signup" exact>
+          <Signup/>
+        </Route>
       </Switch>
-    </div>
+    </Router>
   );
 };
 
