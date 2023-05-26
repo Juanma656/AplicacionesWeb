@@ -7,7 +7,7 @@ import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 
-const Header = () => {
+const Header = ({cartItems}) => {
 
   return (
     <header className="header">
@@ -39,6 +39,9 @@ const Header = () => {
           <li>
             <Link to="/cart" >
               <FontAwesomeIcon icon = {faCartShopping}/>
+              <span className="cart-length">
+                {cartItems.length === 0 ? "" : cartItems.length}
+              </span>
             </Link>
           </li>
         </ul>
